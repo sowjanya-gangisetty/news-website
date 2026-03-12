@@ -1,0 +1,38 @@
+PLAN:
+ 
+ARTICLES
+---------
+ 
+App.jsx:
+   article state defaults to null 
+   category state defaults to null
+ 
+   if (ArticleState)
+      Show FullArticleComponent = state =>
+ 
+   if(CategoryState)
+       Show selectedCategory = state =>
+ 
+For every articleComponents have an onClick event
+    Pass down updateFunction
+    TRefactor so the component is passed the  entire article object -currently we are destructuring it
+    Add it to state
+ 
+CATEGORIES
+-----------
+   Data:
+      Clone tha articles array
+      call it allArticles
+ 
+   State default to Null
+ 
+   For each Menu item:
+      Pass down the updateState function
+      setState to that category string
+      also pass down the updateState function for articles
+      set articleState to null
+ 
+    selectedCategory component
+       pass in the string in state
+       use that string to get all of the articles in that category
+           AllArticle.filter(state)
