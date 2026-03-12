@@ -1,0 +1,23 @@
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 24px 24px 0;
+}
+
+.category > div {
+    flex: 0 1 calc(33% - 16px * 2 / 3);
+}
+
+h3 {
+    flex: 0 0 100%;
+    font-size: 2rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .category > div {
+       padding: 0 0 16px;
+    }
+}

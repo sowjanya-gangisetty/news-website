@@ -1,0 +1,13 @@
+.features {
+    border-bottom: 2px solid #000;
+    display: flex;
+    gap: 16px;
+    margin: 0 5%;
+    padding: 24px 0 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,16 @@
+.mediaContainer {
+    display: flex;
+    gap: 16px;
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .mediaContainer {
+        margin: 16px 0;
+        order: 2;
+    }
+}
